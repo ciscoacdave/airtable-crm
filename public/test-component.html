@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airtable CRM Web Component Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Airtable CRM Web Component</h1>
+    
+    <!-- Your web component -->
+    <airtable-crm 
+      base-id="appHZBQF9hvM4ESF1"
+      token="patS19BpxIb9mXnyi.cfca5e985096af92bdc73fc2124cb74ec38990755f14dd79b0e09c5d3d4d1d03"
+      height="800px">
+    </airtable-crm>
+  </div>
+
+  <!-- Load the web component -->
+  <script type="module">
+    // For local testing, adjust the path
+    import './airtable-crm-component.js';
+    
+    // Example: Listen for events
+    document.querySelector('airtable-crm').addEventListener('search-passenger', (e) => {
+      console.log('Search triggered:', e.detail);
+    });
+  </script>
+</body>
+</html>

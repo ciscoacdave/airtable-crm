@@ -1,5 +1,10 @@
 [build]
-  command = "npm run build:component"
+  command = "npm run build"
+  publish = "dist"
+
+# Also build the web component
+[build]
+  command = "npm run build && npm run build:component"
   publish = "dist"
 
 [[redirects]]

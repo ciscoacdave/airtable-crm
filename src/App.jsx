@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Search, Plus, Edit2, Trash2, RefreshCw, Database } from 'lucide-react';
 
 //const AirtableCRM = () => {
-  const AirtableCRM = ({ baseId, token }) => {
-    const BASE_ID = baseId || 'appHZBQF9hvM4ESF1';
+ const AirtableCRM = ({ baseId, token }) => {
+  const BASE_ID = baseId || 'appHZBQF9hvM4ESF1';
   const TOKEN = token || 'patS19BpxIb9mXnyi.cfca5e985096af92bdc73fc2124cb74ec38990755f14dd79b0e09c5d3d4d1d03';
   //const BASE_ID = 'appHZBQF9hvM4ESF1';
   //const TOKEN = 'patS19BpxIb9mXnyi.cfca5e985096af92bdc73fc2124cb74ec38990755f14dd79b0e09c5d3d4d1d03';
