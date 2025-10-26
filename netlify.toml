@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build:all"
   publish = "dist"
 
 # Also build the web component

@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
 
-   "scripts": {
+  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:component": "vite build --config vite.config.component.js",
+    "build:all": "npm run build && npm run build:component",
     "preview": "vite preview"
   },
 
